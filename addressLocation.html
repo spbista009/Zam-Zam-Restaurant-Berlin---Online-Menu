@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zam Zam Restaurant Branches</title>
+
+  <!-- External Styles and FontAwesome -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="lang.js" defer></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    
+    .addLocation-header-wrapper i{
+        margin-left: 10px;
+    }
+    
+    .addLocation-section {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .branch-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 30px auto;
+      max-width: 1000px;
+      background-color: #fff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .address {
+      width: 100%;
+      padding: 25px;
+      background-color: #fafafa;
+      box-sizing: border-box;
+    }
+
+    .address h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .branch-container {
+        flex-direction: column;
+      }
+
+      .address, .map {
+        width: 100%;
+      }
+
+      .map {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="addLocation-header-wrapper">
+      <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 15px;"></i>
+      <span class="addLocation-section">Our Branches</span>
+    </div>
+  </header>
+
+  <!-- Branch 1 -->
+  <div class="branch-container">
+    <div class="address">
+      <h3>Zam Zam Restaurant – Branch 1</h3>
+      <hr>
+      <p>Hauptstr. 15</p>
+      <p>10827 Berlin</p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Hauptstr.+15,+10827+Berlin&output=embed" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Branch 2 -->
+  <div class="branch-container">
+    <div class="address">
+      <h3>Zam Zam Restaurant – Branch 2</h3>
+      <hr>
+      <p>Huttenstr. 6</p>
+      <p>10553 Berlin</p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Huttenstr.+6,+10553+Berlin&output=embed" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- Back Button Script -->
+  <script>
+    document.getElementById("backArrow").addEventListener("click", () => {
+      window.history.back();
+    });
+  </script>
+
+</body>
+</html>

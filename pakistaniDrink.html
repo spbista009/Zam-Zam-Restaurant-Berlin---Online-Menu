@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistani Drinks</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+</head>
+
+
+
+
+<body>
+
+
+    <!--header-->
+    <header>
+        <div class="pakistaniDrinks-header-wrapper">
+            <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+            <span class="pakistaniDrinks-section" id="pakistaniDrinksHeader">Our Pakistani Drinks</span>
+        </div>
+    </header>
+
+    <!--note section-->
+    <div class="drink-note" id="drink-note">
+        🚫 <strong id="drink-noteTitle">Please note:</strong>
+            <span id="drink-noteText1">We are a Halal restaurant and do not serve alcoholic beverages.</span><br>
+        🥤 <span>
+            <span id="drink-noteText2a">Kindly</span>
+            <strong id="drink-noteText2b">avoid bringing outside drinks.</strong>
+            <span id="drink-noteText2c">Explore our refreshing drink selection instead!</span>
+        </span>
+    </div>
+
+
+
+    <!--warm drinks menu section-->
+    <div class="pakistaniDrinks-container">
+        <div class="pakistaniDrinks-item" id="pakistaniDrink1">1. Sweet Lassi - 2.50€(0.2l) / 3.50(0.4l)<br>
+            <span id="pakistaniDrink1Desc">A refreshing yogurt-based drink, lightly sweetened and blended to creamy perfection.</span>
+            <div class="img imgpk1"></div>
+        </div>
+
+        <div class="pakistaniDrinks-item" id="pakistaniDrink2">2. Salt Lassi - 2.50€(0.2l) / 3.50(0.4l)<br>
+            <span id="pakistaniDrink2Desc">A savory and tangy yogurt drink, seasoned with salt and spices for a classic taste.</span>
+            <div class="img imgpk2"></div>
+        </div>
+
+        <div class="pakistaniDrinks-item" id="pakistaniDrink3">3. Mango Lassi - 2.90€(0.2l) / 3.90(0.4l)<br>
+            <span id="warmDrink3Desc">A tropical twist on tradition, blending ripe mangoes with creamy yogurt for a smooth, sweet delight.</span>
+            <div class="img imgpk3"></div>
+        </div>
+
+        
+    </div>
+
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+    
+</body>
+
+
+</html>

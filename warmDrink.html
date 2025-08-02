@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm Drinks</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+</head>
+
+
+
+
+<body>
+    <!--header-->
+    <header>
+        <div class="warmDrinks-header-wrapper">
+            <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+            <span class="warmDrinks-section" id="warmDrinksHeader">Our Warm Drinks</span>
+        </div>
+    </header>
+
+    
+    <!--note section-->
+    <div class="drink-note" id="drink-note">
+        🚫 <strong id="drink-noteTitle">Please note:</strong>
+            <span id="drink-noteText1">We are a Halal restaurant and do not serve alcoholic beverages.</span><br>
+        🥤 <span>
+            <span id="drink-noteText2a">Kindly</span>
+            <strong id="drink-noteText2b">avoid bringing outside drinks.</strong>
+            <span id="drink-noteText2c">Explore our refreshing drink selection instead!</span>
+        </span>
+    </div>
+    
+    <!--warm drinks menu section-->
+    <div class="warmDrinks-container">
+        <div class="warmDrinks-item" id="warmDrink1">1. Yogi Tea - 1.50€<br>
+            <span id="warmDrink1Desc">A warming blend of spices and tea, served with milk.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink2">2. Tea (Various Types) - 2.00€<br>
+            <span id="warmDrink2Desc">Selection of classic and herbal teas.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink3">3. Fresh Mint Tea - 2.50€<br>
+            <span id="warmDrink3Desc">Refreshing homemade tea with mint, ginger, lemon and honey.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink4">4. Coffee (Cup) - 1.90€<br>
+            <span id="warmDrink4Desc">Freshly brewed black coffee.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink5">5. Coffee (Large Cup) - 2.70€<br>
+            <span id="warmDrink5Desc">A larger serving of classic black coffee.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink6">6. Cappuccino (Cup) - 2.20€<br>
+            <span id="warmDrink6Desc">Espresso with steamed milk and milk foam.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink7">7. Cappuccino (Large Cup) - 3.50€<br>
+            <span id="warmDrink7Desc">A bigger portion of cappuccino delight.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink8">8. Espresso - 1.50€<br>
+            <span id="warmDrink8Desc">Strong and aromatic shot of espresso.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink9">9. Double Espresso - 2.50€<br>
+            <span id="warmDrink9Desc">Twice the strength, double the espresso.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink10">10. Hot Chocolate - 2.50€<br>
+            <span id="warmDrink10Desc">Creamy and sweet hot cocoa drink.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink11">11. Latte Macchiato - 3.50€<br>
+            <span id="warmDrink11Desc">Steamed milk with a shot of espresso.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink12">12. Milk Coffee - 2.90€<br>
+            <span id="warmDrink12Desc">Coffee with plenty of warm milk.</span>
+            
+        </div>
+
+        <div class="warmDrinks-item" id="warmDrink13">13. Chai Latte - 2.90€<br>
+            <span id="warmDrink13Desc">Spiced tea with milk, sweet and aromatic.</span>
+            
+        </div>
+    </div>
+
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+    
+</body>
+
+
+</html>

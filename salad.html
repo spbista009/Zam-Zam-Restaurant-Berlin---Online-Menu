@@ -1,0 +1,79 @@
+<!--
+date: 26.06.25-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salads</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+     <!--header-->
+    <header>
+        <header>
+            <div class="salads-header-wrapper">
+                <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+                <span class="salads-section" id="soupHeader">Our Soup Menus</span>
+            </div>
+        </header>
+
+    </header>
+
+
+
+
+
+    <!--salads menu section-->
+    <div class="salads-container">
+        <div class="salads-item" id="salad15"> 15. Panchranga Salad – €4.50<br>
+                <span id="salad15Desc">Small mixed salad</span> 
+                <div class="img img15"> </div>   
+        </div>
+
+        <div class="salads-item" id="salad16">16. Chicken Salad – €6.90<br>
+                <span id="salad16Desc">Mixed salad with breast of chicken</span> 
+                <div class="img img16"> </div>   
+        </div>
+
+        <div class="salads-item" id="salad17">17. Paneer Salad – €6.90<br>
+                <span id="salad17Desc">Large mixed salad with homemade cottage cheese</span> 
+                <div class="img img17"> </div>   
+        </div>
+
+        <div class="salads-item" id="salad18">18. ZamZam Salad – €8.90  <br>
+                <span id="salad18Desc">Large mixed salad with 4 prawns</span> 
+                <div class="img img18"> </div>   
+        </div>
+
+
+
+
+    </div>
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+</body>
+</html>
+

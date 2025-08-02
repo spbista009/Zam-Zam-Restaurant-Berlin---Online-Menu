@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+<!-- Header -->
+        <header>
+        <div class="Fish-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Fish-section" id="fishHeader">Our Fish Menus</span>
+        </div>
+        </header>
+
+        <!-- Fish Menu Section -->
+         <div class="meal-note" id="meal-noteDesc">
+                🍛 All our meals are served with rice and salad 🥗
+        </div>
+        <div class="Fish-container">
+
+        <div class="Fish-item" id="fish83">83. Fish Curry – €11.90<br>
+        <span id="fish83Desc">Pollock fillet in a zesty curry sauce.</span>
+        <div class="img img83"></div>
+        </div>
+
+        <div class="Fish-item" id="fish84">84. Fish Madras – €12.90<br>
+        <span id="fish84Desc">Pollock fillet in a spicy coconut curry sauce.</span>
+        <div class="img img84"></div>
+        </div>
+
+        <div class="Fish-item" id="fish85">85. Scampi Vindaloo – €15.90<br>
+        <span id="fish85Desc">Prawns 6 pieces with potatoes in coconut curry sauce (spicy).</span>
+        <div class="img img85"></div>
+        </div>
+
+        <div class="Fish-item" id="fish86">86. Scampi Masala – €15.90<br>
+        <span id="fish86Desc">Prawns 6 pieces with tomatoes, onions and ginger in curry sauce.</span>
+        <div class="img img86"></div>
+        </div>
+
+        <div class="Fish-item" id="fish87">87. Scampi Jalfrezi – €15.90<br>
+        <span id="fish87Desc">Prawns 6 pieces with tomatoes, onions and ginger in curry sauce (medium hot).</span>
+        <div class="img img87"></div>
+        </div>
+
+        <div class="Fish-item" id="fish88">88. Fish Korma – €12.90<br>
+        <span id="fish88Desc">Pollock fillet with almonds, cashew nuts and homemade grated cheese in a mild cream sauce.</span>
+        <div class="img img88"></div>
+        </div>
+
+        <div class="Fish-item" id="fish89">89. Fish Masala – €12.90<br>
+        <span id="fish89Desc">Pollock fillet pieces with ginger, bell pepper and onions in zesty sauce.</span>
+        <div class="img img89"></div>
+        </div>
+
+        <div class="Fish-item" id="fish90">90. Fish Jalfrezi – €12.90<br>
+        <span id="fish90Desc">Pollock fillet with tomatoes, onions, bell pepper and ginger in spicy sauce (medium hot).</span>
+        <div class="img img90"></div>
+        </div>
+
+        <div class="Fish-item" id="fish91">91. Scampi Curry – €14.90<br>
+        <span id="fish91Desc">Prawns 6 pieces in a zesty curry sauce.</span>
+        <div class="img img91"></div>
+        </div>
+
+        </div>
+
+
+        
+    
+
+    
+    
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+    
+</body>
+</html>
+

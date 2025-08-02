@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+
+        <!-- Header -->
+        <header>
+        <div class="Vegetarian-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Vegetarian-section" id="vegetarianHeader">Our Vegetarian Menus</span>
+        </div>
+        </header>
+
+        <!-- Vegetarian Menu Section -->
+         <div class="meal-note" id="meal-noteDesc">
+          🍛 All our meals are served with rice and salad 🥗
+        </div>
+        <div class="Vegetarian-container">
+
+        <div class="Vegetarian-item" id="veg30">30. Sabzi Curry – €9.90<br>
+        <span id="veg30Desc">Fresh mixed vegetables in curry sauce.</span>
+        <div class="img img30"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg31">31. Dal Makhani – €9.90<br>
+        <span id="veg31Desc">Black lentils slow-cooked in creamy butter sauce.</span>
+        <div class="img img31"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg32">32. Palak Paneer – €9.90<br>
+        <span id="veg32Desc">Spinach and Indian cottage cheese in a spiced gravy.</span>
+        <div class="img img32"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg33">33. Matar Paneer – €9.90<br>
+        <span id="veg33Desc">Cottage cheese with green peas in tomato-onion curry.</span>
+        <div class="img img33"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg34">34. Shahi Paneer – €11.90<br>
+        <span id="veg34Desc">Cottage cheese in creamy cashew-almond sauce.</span>
+        <div class="img img34"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg35">35. Aloo Gobi – €9.90<br>
+        <span id="veg35Desc">Potato and cauliflower cooked with spices.</span>
+        <div class="img img35"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg36">36. Malai Kofta – €10.90<br>
+        <span id="veg36Desc">Vegetable dumplings in creamy tomato-nut sauce.</span>
+        <div class="img img36"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg37">37. Chole Bhature – €9.90<br>
+        <span id="veg37Desc">Spiced chickpeas served with fried bread (bhatura).</span>
+        <div class="img img37"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg38">38. Coconut Vegetables – €10.90<br>
+        <span id="veg38Desc">Vegetables in coconut curry sauce.</span>
+        <div class="img img38"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg39">39. Khumbi Masala – €9.90<br>
+        <span id="veg39Desc">Mushrooms cooked in spicy masala sauce.</span>
+        <div class="img img39"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg40">40. Sabzi Korma – €10.90<br>
+        <span id="veg40Desc">Vegetables in a mild creamy sauce with nuts.</span>
+        <div class="img img40"></div>
+        </div>
+
+        <div class="Vegetarian-item" id="veg41">41. Paneer Jalfrezi – €11.90<br>
+        <span id="veg41Desc">Paneer with vegetables in tangy tomato-pepper sauce.</span>
+        <div class="img img41"></div>
+        </div>
+
+        </div>
+
+<!-- Script -->
+<script>
+  document.getElementById("backArrow")?.addEventListener("click", function () {
+    window.history.back();
+  });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+    
+</body>
+</html>

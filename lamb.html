@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamb</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+        <!-- Header -->
+        <header>
+            <div class="Lamb-header-wrapper">
+                <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+                <span class="Lamb-section" id="lambHeader">Our Lamb Menus</span>
+            </div>
+        </header>
+
+        <!-- Lamb Menu Section -->
+         <div class="meal-note" id="meal-noteDesc">
+          🍛 All our meals are served with rice and salad 🥗
+        </div>
+        <div class="Lamb-container">
+
+        <div class="Lamb-item" id="lamb60">60. Lamb Paneer – €10.90<br>
+        <span id="lamb60Desc">Lamb with homemade cottage cheese in a mild curry cream sauce.</span>
+        <div class="img img60"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb61">61. Lamb Curry – €13.90<br>
+        <span id="lamb61Desc">Lamb in Pakistani style with a curry sauce.</span>
+        <div class="img img61"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb62">62. Lamb Madras – €13.90<br>
+        <span id="lamb62Desc">Lamb in a spicy coconut curry sauce (medium hot).</span>
+        <div class="img img62"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb63">63. Lamb Sabzi – €14.90<br>
+        <span id="lamb63Desc">Lamb with fresh vegetables in a curry sauce.</span>
+        <div class="img img63"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb64">64. Lamb Saagwala – €13.90<br>
+        <span id="lamb64Desc">Lamb in Pakistani style with ginger, garlic and spinach in a delicate sauce.</span>
+        <div class="img img64"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb65">65. Lamb Bhuna – €14.90<br>
+        <span id="lamb65Desc">Lamb with ginger, onions, tomatoes and bell pepper in a red curry sauce (hot).</span>
+        <div class="img img65"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb66">66. Lamb Korma – €14.90<br>
+        <span id="lamb66Desc">Lamb with homemade grated cottage cheese, almonds and cashew nuts in curry cream sauce.</span>
+        <div class="img img66"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb67">67. Lamb Khumbiwala – €13.90<br>
+        <span id="lamb67Desc">Lamb with fresh mushrooms and ginger in a zesty curry sauce.</span>
+        <div class="img img67"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb68">68. Butter Lamb – €14.90<br>
+        <span id="lamb68Desc">Lamb with spices and nuts in a mild tomato-butter sauce.</span>
+        <div class="img img68"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb69">69. Lamb Vindaloo – €14.90<br>
+        <span id="lamb69Desc">Lamb with potatoes in a coconut curry sauce (medium hot).</span>
+        <div class="img img69"></div>
+        </div>
+
+        <div class="Lamb-item" id="lamb70">70. Lamb Daal – €14.90<br>
+        <span id="lamb70Desc">Tender steamed lamb in Pakistani style with lentils, ginger and tomatoes.</span>
+        <div class="img img70"></div>
+        </div>
+
+        </div>
+
+
+
+        
+    
+
+    
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>    
+
+ <!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+   
+</body>
+</html>

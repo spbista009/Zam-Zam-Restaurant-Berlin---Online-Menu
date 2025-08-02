@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandoori</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="Tandoori-header-wrapper">
+    <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+    <span class="Tandoori-section" id="tandooriHeader">Our Tandoori Menus</span>
+  </div>
+</header>
+
+        <!-- Tandoori Menu Section -->
+         <div class="meal-note" id="meal-noteDesc">
+          🍛 All our meals are served with rice and salad 🥗
+        </div>
+        <div class="Tandoori-container">
+
+        <div class="Tandoori-item" id="tandoori97">97. Paneer Tikka – €12.90<br>
+        <span id="tandoori97Desc">Homemade cottage cheese with bell pepper, onions and ginger.</span>
+        <div class="img img97"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori98">98. Chicken Tandoori – €12.90<br>
+        <span id="tandoori98Desc">Chicken legs marinated and baked in tandoor with bell pepper, onions and ginger.</span>
+        <div class="img img98"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori99">99. Chicken Tikka – €12.90<br>
+        <span id="tandoori99Desc">Breast of chicken, prepared with bell pepper, onions and ginger.</span>
+        <div class="img img99"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori100">100. Mutton Tikka – €15.90<br>
+        <span id="tandoori100Desc">Lamb with bell pepper, onions and ginger.</span>
+        <div class="img img100"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori101">101. Fish Tikka – €13.90<br>
+        <span id="tandoori101Desc">Marinated pollock with bell pepper, onions and ginger.</span>
+        <div class="img img101"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori102">102. ZamZam Tikka – €15.90<br>
+        <span id="tandoori102Desc">Chicken legs, lamb and breast of chicken, all marinated with garlic oil and grilled with bell pepper, onion and ginger.</span>
+        <div class="img img102"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori103">103. Scampi Tikka – €17.90<br>
+        <span id="tandoori103Desc">Fried prawns 8 pieces with peppers, onions and ginger.</span>
+        <div class="img img103"></div>
+        </div>
+
+        <div class="Tandoori-item" id="tandoori104">104. Sabzi-Paneer Tikka – €12.90<br>
+        <span id="tandoori104Desc">Fresh vegetables with paneer, pepper, onions and ginger.</span>
+        <div class="img img104"></div>
+        </div>
+
+</div>
+
+
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+        
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+    
+
+    
+</body>
+</html>
+

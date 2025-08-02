@@ -1,0 +1,85 @@
+<!--
+date: 26.06.25-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplements</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+    <div class="Supplements-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Supplements-section" id="supplementsHeader">Our Supplements Menus</span>
+    </div>
+    </header>
+
+    <!-- Supplements Menu Section -->
+    <div class="Supplements-container">
+
+    <div class="Supplements-item" id="supp125">125. Bathura – €2.00<br>
+        <span id="supp125Desc">Fine flour bread fried.</span>
+        <div class="img img125"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp126">126. Tandoori Chapati – €2.00<br>
+        <span id="supp126Desc">Leavened bread of wholemeal.</span>
+        <div class="img img126"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp127">127. Tandoori Naan – €2.50<br>
+        <span id="supp127Desc">Leavened bread of fine flour.</span>
+        <div class="img img127"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp128">128. Tandoori Garlic Naan – €2.90<br>
+        <span id="supp128Desc">Leavened bread of fine flour with garlic.</span>
+        <div class="img img128"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp129">129. Tandoori Paneer Naan – €2.90<br>
+        <span id="supp129Desc">Leavened bread of fine flour baked with cheese.</span>
+        <div class="img img129"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp131">131. Raita – €2.50<br>
+        <span id="supp131Desc">Yoghurt with tomatoes, cucumber, onions and spices.</span>
+        <div class="img img131"></div>
+    </div>
+
+    <div class="Supplements-item" id="supp132">132. Extra-Portion Basmati Rice – €2.50<br>
+        <span id="supp132Desc">Basmati rice.</span>
+        <div class="img img132"></div>
+    </div>
+
+    </div>
+
+<!-- Script -->
+<script>
+  document.getElementById("backArrow")?.addEventListener("click", function () {
+    window.history.back();
+  });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+    
+</body>
+</html>
+

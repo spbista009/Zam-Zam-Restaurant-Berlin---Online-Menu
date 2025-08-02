@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+<!--header-->
+    <header>
+        <header>
+            <div class="Appetizer-header-wrapper">
+                <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+                <span class="Appetizer-section" id="AppetizerHeader">Our Appetizer Menus</span>
+            </div>
+        </header>
+
+    </header>
+
+
+    <!--Appetizer menu section-->
+    <div class="Appetizer-container">
+
+        <div class="Appetizer-item" id="appetizer19">19. Gobi Pakora – €4.50<br>
+            <span id="appetizer19Desc">Cauliflower fried in chickpeas batter.</span>
+            <div class="img img19"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer20">20. Samosas – €4.90<br>
+            <span id="appetizer20Desc">Two dough bags stuffed with potatoes and green peas.</span>
+            <div class="img img20"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer21">21. Onion Bhaji – €4.50<br>
+            <span id="appetizer21Desc">Onion rings fried in chickpeas batter.</span>
+            <div class="img img21"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer22">22. Fish Pakora – €4.90<br>
+            <span id="appetizer22Desc">Fish filet fried in chickpeas batter.</span>
+            <div class="img img22"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer23">23. Khumbi Pakora – €4.50<br>
+            <span id="appetizer23Desc">Fresh mushroom fried in chickpeas batter.</span>
+            <div class="img img23"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer24">24. Paneer Pakora – €4.90<br>
+            <span id="appetizer24Desc">Homemade cottage cheese fried in chickpeas batter.</span>
+            <div class="img img24"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer25">25. Murgh Pakora – €4.90<br>
+            <span id="appetizer25Desc">Breast of chicken with Indian spices fried in chickpeas batter.</span>
+            <div class="img img25"></div>
+        </div>
+
+        <div class="Appetizer-item" id="appetizer26">26. Mixed Pakora – €7.90<br>
+            <span id="appetizer26Desc">Vegetables and chicken fried in chickpeas batter.</span>
+            <div class="img img26"></div>
+        </div>
+
+    </div>
+
+    <!--script For going back to homepage-->
+    <script>
+        document.getElementById("backArrow")?.addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+
+    <!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+</body>
+</html>

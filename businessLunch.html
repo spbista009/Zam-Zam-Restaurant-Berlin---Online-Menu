@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Menu</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <style>
+        .menu-day{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        
+        }
+
+       
+    </style>
+</head>
+
+
+<body>   
+    <!-- Header -->
+    <header>
+        <div class="BusinessMenu-header-wrapper">
+            <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+            <span class="BusinessMenu-section" id="BMHeader">Our Business Menus</span>
+        </div>
+    </header>
+
+    <!--Note section-->
+    <div class="note-BL">
+        <div class="open-time" >
+            <div class="divInfo">
+                <i class="fa-solid fa-clock"></i><p id="noteBLDesc">Monday - Friday : 12-15 (beside Holidays)</p> 
+            </div>
+
+           
+        </div>
+        <div class="noteBL" id="extraInfoDesc">Each Busines Menu is with Basmati Rice and small salad.</div>
+        <div class="takeaway" id="takeAwayDesc">Every Dish is available for take away without soup and salad.</div>
+    </div>
+
+   
+    <!-- Day Selector -->
+    <div class="selectDay">
+        <label for="dayDropdown" ><strong id="selectDesc">Please select a day to view the business lunch menu:</strong></label>
+        <select class="select" id="dayDropdown" onchange="showMenu(this.value)">
+            <option value="" id="day00Desc">-- Select Day --</option>
+            <option value="monday" id="day01Desc">Monday (BM-1)</option>
+            <option value="tuesday" id="day02Desc">Tuesday (BM-2)</option>
+            <option value="wednesday" id="day03Desc">Wednesday (BM-3)</option>
+            <option value="thursday" id="day04Desc">Thursday (BM-4)</option>
+            <option value="friday" id="day05Desc">Friday (BM-5)</option>
+        </select>
+    </div>
+    <hr>
+
+    <!-- Menu Display -->
+<div class="BusinessMenu-container">
+    <!-- Monday Menu -->
+    <div class="menu-day" id="monday" style="display: none;">
+        <!-- soup note -->
+        <div class="soup-note"  >
+                <strong>Starter </strong> <pre id="soup-noteMon">Lentil Soup.</pre>
+        </div>
+        
+        <div class="BusinessMenu-item" id="mondayM1">M1. Channa Masalah - 7.90€<br/>
+            <span id="mondayM1Desc">Chickpeas with onions and coriander in a tomato-curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM2">M2. Khumbi Masalah - 7.90€<br/>
+            <span id="mondayM2Desc">Fresh mushrooms with cottage cheese and green peas in cream sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM3">M3. Chicken Curry - 7.90€<br/>
+            <span id="mondayM3Desc">Breast of chicken with a zesty curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM4">M4. Chicken Saagwala - 8.90€<br/>
+            <span id="mondayM4Desc">Chicken with ginger, garlic, and spinach in a delicate sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM5">M5. Mutton Curry - 8.90€<br/>
+            <span id="mondayM5Desc">Lamb in Pakistani style with curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM6">M6. Mutton Sabzi - 9.90€<br/>
+            <span id="mondayM6Desc">Lamb with vegetables in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayM7">M7. Fish Vindaloo - 8.90€<br/>
+            <span id="mondayM7Desc">Codfish with potatoes in a coconut-curry sauce (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayG1">G1. Mango-Lassi (0.20 l) - 2.50€<br/>
+            <span id="mondayG1Desc">Refreshing mango yogurt drink</span>
+        </div>
+        <div class="BusinessMenu-item" id="mondayG2">G2. Mint Tea - 2.00€<br/>
+            <span id="mondayG2Desc">Fresh mint, ginger, and honey</span>
+        </div>
+    </div>
+
+    <!-- Tuesday Menu -->
+    <div class="menu-day" id="tuesday" style="display: none;">
+         <!-- soup note -->
+        <div class="soup-note"  >
+                <strong>Starter </strong> <pre id="soup-noteTue">Tomato Soup.</pre>
+        </div>
+
+        <div class="BusinessMenu-item" id="tuesdayM1">M1. Sabzi Curry - 7.90€<br/>
+            <span id="tuesdayM1Desc">Fresh vegetables in curry sauce with turmeric and ginger</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM2">M2. Palak Paneer - 7.90€<br/>
+            <span id="tuesdayM2Desc">Homemade cheese with spinach in curry-cream sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM3">M3. Chicken Curry - 7.90€<br/>
+            <span id="tuesdayM3Desc">Chicken breast in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM4">M4. Mango Chicken - 8.90€<br/>
+            <span id="tuesdayM4Desc">Chicken fillet in mango-tomato curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM5">M5. Mutton Curry - 8.90€<br/>
+            <span id="tuesdayM5Desc">Lamb in Pakistani curry</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM6">M6. Mutton Vindaloo - 9.90€<br/>
+            <span id="tuesdayM6Desc">Lamb with potatoes in coconut-curry sauce (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayM7">M7. Fish Korma - 8.90€<br/>
+            <span id="tuesdayM7Desc">Codfish fillet in creamy curry with coconut and cardamom</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayG1">G1. Mango-Lassi (0.20 l) - 2.50€<br/>
+            <span id="tuesdayG1Desc">Refreshing mango yogurt drink</span>
+        </div>
+        <div class="BusinessMenu-item" id="tuesdayG2">G2. Mint Tea - 2.00€<br/>
+            <span id="tuesdayG2Desc">Fresh mint, ginger, and honey</span>
+        </div>
+    </div>
+
+    <!-- Wednesday Menu -->
+    <div class="menu-day" id="wednesday" style="display: none;">
+         <!-- soup note -->
+        <div class="soup-note"  >
+                <strong>Starter </strong> <pre id="soup-noteWed">Vegetable Soup.</pre>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM1">M1. Aloo Channa - 7.90€<br/>
+            <span id="wednesdayM1Desc">Potatoes with chickpeas and ginger in curry</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM2">M2. Matar Paneer - 7.90€<br/>
+            <span id="wednesdayM2Desc">Homemade cheese with peas in cream curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM3">M3. Chicken Curry - 7.90€<br/>
+            <span id="wednesdayM3Desc">Chicken breast in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM4">M4. Chicken Sabzi - 8.90€<br/>
+            <span id="wednesdayM4Desc">Chicken breast with vegetables in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM5">M5. Mutton Curry - 8.90€<br/>
+            <span id="wednesdayM5Desc">Lamb in Pakistani style curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM6">M6. Mutton Saagwala - 9.90€<br/>
+            <span id="wednesdayM6Desc">Lamb with spinach, garlic, and ginger</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayM7">M7. Mango Fish - 8.90€<br/>
+            <span id="wednesdayM7Desc">Codfish in mango-cream curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayG1">G1. Mango-Lassi (0.20 l) - 2.50€<br/>
+         <span id="wednesdayG1Desc">Refreshing mango yogurt drink</span>
+        </div>
+        <div class="BusinessMenu-item" id="wednesdayG2">G2. Mint Tea - 2.00€<br/>
+            <span id="wednesdayG2Desc">Fresh mint, ginger, and honey</span>
+        </div>
+    </div>
+
+    <!-- Thursday Menu -->
+    <div class="menu-day" id="thursday" style="display: none;">
+         <!-- soup note -->
+        <div class="soup-note"  >
+                <strong>Starter </strong> <pre id="soup-noteThu">Lentil Soup.</pre>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM1">M1. Shahi Paneer - 7.90€<br/>
+            <span id="thursdayM1Desc">Homemade cheese with almond-cashew sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM2">M2. Sabzi Jalfrezi - 7.90€<br/>
+            <span id="thursdayM2Desc">Vegetables with ginger in tomato-curry sauce (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM3">M3. Chicken Curry - 7.90€<br/>
+            <span id="thursdayM3Desc">Chicken breast in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM4">M4. Paneer Chicken - 8.90€<br/>
+            <span id="thursdayM4Desc">Chicken with homemade cheese, peas in cream sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM5">M5. Mutton Curry - 8.90€<br/>
+            <span id="thursdayM5Desc">Lamb in Pakistani curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM6">M6. Mutton Madras - 8.90€<br/>
+            <span id="thursdayM6Desc">Lamb in coconut curry (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayM7">M7. Fish Curry - 8.90€<br/>
+            <span id="thursdayM7Desc">Codfish in coconut curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayG1">G1. Mango-Lassi (0.20 l) - 2.50€<br/>
+            <span id="thursdayG1Desc">Refreshing mango yogurt drink</span>
+        </div>
+        <div class="BusinessMenu-item" id="thursdayG2">G2. Mint Tea - 2.00€<br/>
+            <span id="thursdayG2Desc">Fresh mint, ginger, and honey</span>
+        </div>
+    </div>
+
+    <!-- Friday Menu -->
+    <div class="menu-day" id="friday" style="display: none;">
+         <!-- soup note -->
+        <div class="soup-note"  >
+                <strong>Starter </strong> <pre id="soup-noteFri">Vegetable Soup.</pre>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM1">M1. Aloo Saagwala - 7.90€<br/>
+            <span id="fridayM1Desc">Potatoes with spinach and curry</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM2">M2. Sabzi Curry - 7.90€<br/>
+            <span id="fridayM2Desc">Vegetables with coriander and ginger in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM3">M3. Chicken Curry - 7.90€<br/>
+            <span id="fridayM3Desc">Chicken breast in curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM4">M4. Chicken Vindaloo - 8.90€<br/>
+            <span id="fridayM4Desc">Chicken with potatoes in coconut curry (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM5">M5. Mutton Curry - 8.90€<br/>
+            <span id="fridayM5Desc">Lamb in Pakistani curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM6">M6. Mutton Paneer - 9.90€<br/>
+            <span id="fridayM6Desc">Lamb with homemade cheese in cream curry sauce</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayM7">M7. Fish Jalfrezi - 8.90€<br/>
+            <span id="fridayM7Desc">Codfish with tomatoes, onions, bell pepper, ginger in spicy sauce (medium hot)</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayG1">G1. Mango-Lassi (0.20 l) - 2.50€<br/>
+            <span id="fridayG1Desc">Refreshing mango yogurt drink</span>
+        </div>
+        <div class="BusinessMenu-item" id="fridayG2">G2. Mint Tea - 2.00€<br/>
+            <span id="fridayG2Desc">Fresh mint, ginger, and honey</span>
+        </div>
+        </div>
+    </div>
+    
+
+
+
+  <!-- Script -->
+  <script>
+        document.getElementById("backArrow").addEventListener("click", function () {
+        window.history.back();
+        });
+
+        function showMenu(day) {
+        const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+        days.forEach(d => {
+            document.getElementById(d).style.display = 'none';
+        });
+        if (day) {
+            document.getElementById(day).style.display = 'flex';
+        }
+        }
+    </script>
+
+
+
+    <!--script For going back to homepage-->
+    <script>
+        document.getElementById("backArrow").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
+    
+</body>
+</html>

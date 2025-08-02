@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soups</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    
+</head>
+
+
+
+
+<body>
+
+    <!--header-->
+    <header>
+        <header>
+            <div class="soup-header-wrapper">
+                <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+                <span class="soup-section" id="soupHeader">Our Soup Menus</span>
+            </div>
+        </header>
+
+    </header>
+
+
+    <!--soup menu section-->
+    <div class="soup-container">
+        <div class="soup-item" id="soup9">9. Vegetable Soup - 4.50€<br>
+                <span id="soup9Desc">Warm, flavorful Vegetable soup made fresh daily.</span> 
+                <div class="img img9"> </div>   
+        </div>
+
+        <div class="soup-item" id="soup10">10. Lentil Soup - 4.50€<br>
+                <span id="soup10Desc">Warm, flavorful lentil soup made fresh daily.</span> 
+                <div class="img img10"> </div>   
+        </div>
+
+        <div class="soup-item" id="soup11">11. Tomato Soup - 4.50€<br>
+                <span id="soup11Desc">Fresh Tomato Soup.</span> 
+                <div class="img img11"> </div>   
+        </div>
+
+        <div class="soup-item" id="soup12">12. Mulligatawny Soup - 4.90€<br>
+                <span id="soup12Desc">Curry soup with chicken and Rice.</span> 
+                <div class="img img12"> </div>   
+        </div>
+
+        <div class="soup-item" id="soup13">13. Zam Zam Soup - 5.50€<br>
+                <span id="soup13Desc">Pakistani style soup with lamb and chicken.</span> 
+                <div class="img img13"> </div>   
+        </div>
+
+
+    </div>
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+    
+</body>
+</html>

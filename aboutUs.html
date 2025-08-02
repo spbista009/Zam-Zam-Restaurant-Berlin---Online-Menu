@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+<style>
+     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .IntroDescription{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+
+
+</style>
+
+
+
+</head>
+
+<body>
+        <!-- Header -->
+        <header>
+        <div class="aboutUs-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="aboutUs-section" id="aboutUsHeader"> About Us </span>
+        </div>
+        </header>
+
+        <!-- aboutUs short description Section -->
+         <div class="IntroDescription">
+            <h3 id="WelcomeDesc">Welcome to Zam Zam Restaurant – Berlin</h3><br>
+            <p id="introDesc" style="text-align: justify;"  >
+            Your destination for authentic Indian and Pakistani cuisine in the heart of Berlin. At Zam Zam, 
+            we bring the rich flavors, vibrant spices, and time-honored recipes of South Asia to your table.
+             From fragrant biryanis to sizzling tandoori specialties, every dish is crafted with care and
+              passion. Whether you're in the mood for a comforting curry or looking to explore new tastes,
+               we invite you to enjoy warm hospitality and a truly cultural dining experience.<br>
+                
+            
+            </p>
+        </div><br>
+
+        <!-- aboutUs zam zam 1 container Section -->
+         <div class="zamZamdesc-container">  
+            <div class="zamZam1Desc">
+                <h4 id="Branch1">Zam Zam Schöneberg – Main Branch</h4><br>
+                <p id="zamZam1Desc" style="text-align: justify;" >
+                    Our story began in 2006 in the heart of Schöneberg with a humble eatery that quickly won the
+                     hearts of the local community. In 2018, we expanded into our current, larger space to better
+                      serve our growing customer base, while the original location continues to operate as our
+                       dedicated kitchen. Today, the Schöneberg branch remains the soul of Zam Zam — 
+                       where tradition, authenticity, and quality come together in every bite.</p>
+            </div>
+
+            <div class="zamZamImg1"></div>
+
+           
+        </div>
+
+        <div class="zamZamImg-container">
+
+             <div class="zamZam2Desc">
+                <h4 id="Branch2">Zam Zam Moabit </h4><br>
+                <p id="zamZam2Desc" style="text-align: justify;">
+                    Opened in 2013, our Moabit branch was launched to bring the beloved Zam Zam experience to 
+                    another vibrant part of Berlin. Known for its consistency, rich flavors, and warm hospitality,
+                     Zam Zam Moabit has become a favorite destination for both locals and visitors seeking an 
+                     unforgettable dining experience.
+                </p>
+            </div>
+            
+            <div class="zamZamImg2"></div>  
+        </div>
+
+      <!--image  for both restaurant -->
+
+        
+            
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>    
+
+    
+</body>
+</html>

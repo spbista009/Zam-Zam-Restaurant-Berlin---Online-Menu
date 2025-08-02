@@ -1,0 +1,73 @@
+<!--
+date: 26.06.25-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children Dish</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+
+        <!-- Header -->
+    <header>
+    <div class="childrenDish-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="childrenDish-section" id="childrenDishHeader">Our Children Dish Menus</span>
+    </div>
+    </header>
+
+    <!-- Children Menu Section -->
+    <div class="childrenDish-container">
+
+    <div class="childrenDish-item" id="child140">140. Sabzi Curry – €6.90<br>
+        <span id="child140Desc">Fresh vegetables with coriander and ginger in curry sauce.</span>
+        <div class="img img140"></div>
+    </div>
+
+    <div class="childrenDish-item" id="child141">141. Chicken Curry – €7.90<br>
+        <span id="child141Desc">Breast of chicken in zesty curry sauce.</span>
+        <div class="img img141"></div>
+    </div>
+
+    <div class="childrenDish-item" id="child142">142. Chicken Korma – €8.90<br>
+        <span id="child142Desc">Breast of chicken with almonds, homemade cottage cheese in a mild cream sauce.</span>
+        <div class="img img142"></div>
+    </div>
+
+    <div class="childrenDish-item" id="child143">143. Paneer Chicken – €8.90<br>
+        <span id="child143Desc">Breast of chicken with homemade cottage cheese in a mild curry cream sauce.</span>
+        <div class="img img143"></div>
+    </div>
+
+    </div>
+
+<!-- Script for Back Button -->
+<script>
+  document.getElementById("backArrow")?.addEventListener("click", function () {
+    window.history.back();
+  });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+
+   
+</body>
+</html>
+

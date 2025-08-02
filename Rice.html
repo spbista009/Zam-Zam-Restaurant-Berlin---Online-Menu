@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+        <!-- Header -->
+    <header>
+    <div class="Rice-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Rice-section" id="riceHeader">Our Rice Menus</span>
+    </div>
+    </header>
+
+    <!-- Rice Menu Section -->
+    <div class="Rice-container">
+
+    <div class="Rice-item" id="rice107">107. Sabzi Biryani – €9.90<br>
+        <span id="rice107Desc">Fried rice with fresh vegetables, almonds, nuts and exotic spices.</span>
+        <div class="img img107"></div>
+    </div>
+
+    <div class="Rice-item" id="rice108">108. Chicken Biryani – €11.90<br>
+        <span id="rice108Desc">Fried rice with breast of chicken, bell pepper, onions, peas and curry.</span>
+        <div class="img img108"></div>
+    </div>
+
+    <div class="Rice-item" id="rice109">109. Mutton Biryani – €13.90<br>
+        <span id="rice109Desc">Fried rice with lamb, bell pepper, onions, peas and curry.</span>
+        <div class="img img109"></div>
+    </div>
+
+    <div class="Rice-item" id="rice110">110. Scampi Biryani – €15.90<br>
+        <span id="rice110Desc">Fried rice with prawns, bell pepper, onions, peas and curry.</span>
+        <div class="img img110"></div>
+    </div>
+
+    </div>
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+    
+</body>
+</html>

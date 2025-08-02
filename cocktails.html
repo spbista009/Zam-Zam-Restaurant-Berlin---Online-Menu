@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+    <div class="Cocktail-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Cocktail-section" id="CocktailHeader">Our Cocktail Menus</span>
+    </div>
+
+    </header>
+
+    <!--note section-->
+   <div class="drink-note" id="drink-note">
+        🚫 <strong id="drink-noteTitle">Please note:</strong>
+            <span id="drink-noteText1">We are a Halal restaurant and do not serve alcoholic beverages.</span><br>
+        🥤 <span>
+            <span id="drink-noteText2a">Kindly</span>
+            <strong id="drink-noteText2b">avoid bringing outside drinks.</strong>
+            <span id="drink-noteText2c">Explore our refreshing drink selection instead!</span>
+        </span>
+    </div>
+
+
+
+     <div class="Cocktail-container">
+
+        <div class="Cocktail-item" id="cocktail1">1. Mango Kiss – €4.90<br>
+            <span id="cocktail1Desc">Mango juice, mango pulp, orange juice, buttermilk, grenadine.</span>
+            <div class="img img1"></div>
+        </div>
+
+        <div class="Cocktail-item" id="cocktail2">2. Coconut Kiss – €4.90<br>
+            <span id="cocktail2Desc">Coconut syrup, cream, pineapple juice, grenadine.</span>
+            <div class="img img2"></div>
+        </div>
+
+        <div class="Cocktail-item" id="cocktail3">3. Mosquito – €4.90<br>
+            <span id="cocktail3Desc">Lime, brown sugar, fresh mint, lime juice, ginger ale.</span>
+            <div class="img img3"></div>
+        </div>
+
+        <div class="Cocktail-item" id="cocktail4">4. Summer Love – €4.90<br>
+            <span id="cocktail4Desc">Orange juice, lime, fresh mint, water, grenadine.</span>
+            <div class="img img4"></div>
+        </div>
+
+        <div class="Cocktail-item" id="cocktail5">5. Strawberry Kiss – €4.90<br>
+            <span id="cocktail5Desc">Strawberry syrup, coconut syrup, pineapple juice, cream, orange juice.</span>
+            <div class="img img5"></div>
+        </div>
+
+        <div class="Cocktail-item" id="cocktail6">6. Cinderella – €4.90<br>
+            <span id="cocktail6Desc">Fresh lime juice, orange juice, pineapple juice, ginger ale, grenadine.</span>
+            <div class="img img6"></div>
+        </div>
+
+       
+        <div class="Cocktail-item" id="cocktail8">7. Desi Soda – €4.90<br>
+            <span id="cocktail7Desc">Himalayan salt, fresh mint, black cumin, soda, table salt, fresh lime juice.</span>
+            <div class="img img7"></div>
+        </div>
+    </div>
+   
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+</body>
+</html>
+

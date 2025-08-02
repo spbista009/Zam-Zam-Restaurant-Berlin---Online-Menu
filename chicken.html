@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+<!-- Header -->
+<header>
+    <div class="Chicken-header-wrapper">
+        <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+        <span class="Chicken-section" id="chickenHeader">Our Chicken Menus</span>
+    </div>
+</header>
+
+
+<!-- Chicken Dishes -->
+<div class="meal-note" id="meal-noteDesc">
+    🍛 All our meals are served with rice and salad 🥗
+</div>
+
+<div class="Chicken-container">
+
+    <div class="Chicken-item" id="chicken42">42. Chicken Curry - €10.90<br>
+        <span id="chicken42Desc">Breast of chicken in a zesty curry sauce.</span>
+        <div class="img img42"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken43">43. Chicken Sabzi - €11.90<br>
+        <span id="chicken43Desc">Breast of chicken with fresh vegetables in a zesty curry sauce.</span>
+        <div class="img img43"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken44">44. Chicken Saagwala - €11.90<br>
+        <span id="chicken44Desc">Breast of chicken in Pakistani style with ginger, garlic and spinach in a delicate sauce.</span>
+        <div class="img img44"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken45">45. Chicken Vindaloo - €11.90<br>
+        <span id="chicken45Desc">Breast of chicken with potatoes in coconut curry sauce.</span>
+        <div class="img img45"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken46">46. Butter Chicken - €12.90<br>
+        <span id="chicken46Desc">Breast of chicken with spices and nuts in a mild tomato-butter sauce.</span>
+        <div class="img img46"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken47">47. Chicken Korma - €12.90<br>
+        <span id="chicken47Desc">Breast of chicken with almonds, cashew nuts and homemade cottage cheese in a mild cream sauce.</span>
+        <div class="img img47"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken48">48. Chicken Jalfrezi - €11.90<br>
+        <span id="chicken48Desc">Breast of chicken with tomatoes, onions, bell pepper and ginger in a spicy sauce.</span>
+        <div class="img img48"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken49">49. Chicken Madras - €11.90<br>
+        <span id="chicken49Desc">Breast of chicken with a spicy coconut curry sauce.</span>
+        <div class="img img49"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken50">50. Chicken Kokos - €11.90<br>
+        <span id="chicken50Desc">Breast of chicken with fresh vegetables and ginger in a coconut-curry sauce.</span>
+        <div class="img img50"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken51">51. Mango Chicken - €11.90<br>
+        <span id="chicken51Desc">Breast of chicken with mango in a cream sauce.</span>
+        <div class="img img51"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken52">52. Chicken Shabnam - €11.90<br>
+        <span id="chicken52Desc">Breast of chicken with fresh mushrooms in a tomato-curry sauce.</span>
+        <div class="img img52"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken53">53. Sweet Chilli Chicken - €12.90<br>
+        <span id="chicken53Desc">Breast of chicken in sweet chilli sauce.</span>
+        <div class="img img53"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken54">54. Paneer Chicken - €11.90<br>
+        <span id="chicken54Desc">Breast of chicken with homemade cottage cheese pieces in a mild curry cream sauce.</span>
+        <div class="img img54"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken55">55. Chicken Daal - €11.90<br>
+        <span id="chicken55Desc">Breast of chicken in Pakistani style with lentils, ginger and tomatoes.</span>
+        <div class="img img55"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken56">56. Broccoli Chicken - €11.90<br>
+        <span id="chicken56Desc">Breast of chicken with broccoli in a mild curry sauce.</span>
+        <div class="img img56"></div>
+    </div>
+
+    <div class="Chicken-item" id="chicken57">57. Chicken Masala - €12.90<br>
+        <span id="chicken57Desc">Breast of chicken fillet with ginger, bell pepper, onions and coriander in a zesty sauce.</span>
+        <div class="img img57"></div>
+    </div>
+
+</div>
+
+<!-- Back arrow script -->
+<script>
+    document.getElementById("backArrow")?.addEventListener("click", function () {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+</body>
+</html>

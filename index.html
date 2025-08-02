@@ -1,0 +1,294 @@
+<!--This Project is online Menu for Restaurant Zam Zam Berlin-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zam Zam Restaurant Berlin</title>
+
+    <!--linking  to cdnjs(content delivary network java script before using font awesome websites icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+</head>
+
+<!--this js code helps html file to translate in the choosen language  -->
+    <script>
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const lang = localStorage.getItem('selectedLang') || 'en';
+            const url = new URL(this.href);
+            url.searchParams.set('lang', lang);
+            window.location.href = url.toString();
+            });
+        });
+    </script>
+
+    
+<body>
+
+  
+
+    <script src="lang.js"></script> <!--linkng to the lang.js file-->
+
+    <!----------------------A) header section of the site------------------------->
+    <header>
+        <!--1) Restaurant logo-->
+        <div class="logo">
+            <img src = "images/zamzam_logo.png" alt = "zam zam Restaurant logo">
+        </div>
+
+        <!--2) navbar-->
+        <div class="navbar" >
+
+            <!--2.1) box2 : über uns -->
+            <a href="aboutUs.html" id="aboutUs-link" >
+                <div class="box2 border">
+                    <pre id="about us" >About Us </pre> 
+                </div>
+            </a>
+            <!--2.2) box3 : standort -->
+            <a href="addressLocation.html" id="adressLocation-link">
+                <div class="box2 border">
+                    <pre id="standort">Standort <i class="fa-solid fa-location-dot"></i></pre> 
+                </div>
+            </a>
+
+
+            <!--2.3) box4: Parkplace -->
+            <a href="parkPlace.html" id="parkplace-link">
+                <div class="box2 border">
+                    <pre id="ParkPlce">Park-Place </pre>
+                </div>
+            </a>
+
+            <!-- Language Dropdown -->
+            <div class="box2 border">
+               
+                <select id="languageSelect" onchange="selectLang(this.value)">
+                    
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                </select>
+            </div>
+
+            
+        </div>
+
+    </header>
+
+    <!----------------------------3) hero section--------------------->
+        <div class="hero-section">
+            <div class="welcome-message" >
+                <!-- Welcome to our online Menu ! -->
+                <h1 id="WelcomeMsg">Welcome to Zam Zam Berlin</h1>
+                <p id="WelcomeMsgDesc">Explore our flavorful and authentic menu, crafted with passion.</p>
+
+            </div>
+        </div>
+
+        <!-------------------------4) Menu section--------------------->
+
+        <div class="menu-container">
+            <!--4) Business Lunch-->
+            <a href="businessLunch.html" class="menu-link" >
+                <div class="menu-item" id="menuBusiness" >Business  Menu <br>
+                    <span id="menuBusinessDesc">A thoughtfully curated selection of satisfying meals, perfect for a quick and delicious midday break</span>    
+                </div>
+            </a>
+
+
+             <!--4.0) chef recommendation section-->
+            <a href="chefRecomendation.html" class="menu-link" >
+                <div class="menu-item" id="menuChefRecommendation" >Chef's Recommendations<br>
+                    <span id="menuChefRecommendationDesc">Handpicked signature dishes crafted with rich flavors and authentic spices.</span>    
+                </div>
+            </a>
+
+            <!--4.1) Soup section-->
+            <a href="soups.html" class="menu-link" >
+                <div class="menu-item" id="menuSoup" >Soup<br>
+                    <span id="menuSoupDesc">Warm, flavorful beginnings made fresh daily.</span>    
+                </div>
+            </a>
+        <!--in order to make the entire menu item clickable: the best practice is to wrap the whole div with the anchor tag -->
+            <!--4.2) Salad section-->
+            <a href="salad.html" class="menu-link" >
+                <div class="menu-item" id="menuSalad" >Salad<br>
+                    <span id="menuSaladDesc">Fresh, crisp, and colorful , a perfect start or side to any meal.</span> 
+                </div>
+            </a>
+            
+             <!--4.3) Appetizer section-->
+            <a href="appetizer.html" class="menu-link" >
+                <div class="menu-item" id="menuAppt" >Appetizer<br>
+                    <span id="menuApptDesc"> Small bites, big flavors to awaken your appetite.</span> 
+                </div>
+            </a>
+
+             
+             <!--4.4) Vegetarian section-->
+            <a href="vegetarian.html" class="menu-link" >
+                <div class="menu-item" id="menuVeg">Vegetarian<br>
+                    <span id="menuVegDesc">Wholesome and delicious, crafted for plant lovers.</span>
+                </div> 
+            </a>
+
+             <!--4.5)  Chicken section-->
+            <a href="chicken.html" class="menu-link" >
+                <div class="menu-item" id="menuChick">Chicken<br>
+                    <span id="menuChickDesc">Tender chicken dishes, seasoned to perfection.</span>
+                </div>
+            </a>
+
+             <!--4.6) Lamb section-->
+            <a href="lamb.html" class="menu-link" >
+                <div class="menu-item" id="menuLamb">Lamb<br>
+                     <span id="menuLambDesc">Succulent lamb specialties inspired by authentic recipes.</span>
+                </div>
+            </a>
+
+             <!--4.7) Rice Menu  section-->
+             <a href="Rice.html" class="menu-link" >
+                <div class="menu-item" id="menuRice">Rice Menu<br>
+                    <span id="menuRiceDesc">Aromatic rice dishes that complete every meal.</span>
+                </div>
+            </a>
+
+             <!--4.8) Fish section-->
+             <a href="fish.html" class="menu-link" >
+                <div class="menu-item" id="menuFish">Fish<br>
+                    <span id="menuFishDesc">Fresh and flavorful, from grill to plate.</span>
+                </div>
+            </a>
+
+             <!--4.9) Grill section-->
+            <a href="grill.html" class="menu-link" >
+                <div class="menu-item" id="menuGrill">Grill<br>
+                    <span id="menuGrillDesc">Chargrilled delights with bold spices.</span>
+                </div>
+            </a>
+
+             <!--4.10) Supplement section-->
+            <a href="supplements.html" class="menu-link" >
+                <div class="menu-item" id="menuSupp">Supplement<br>
+                    <span id="menuSuppDesc">Extra sides to enhance your experience.</span>
+                </div>
+            </a>
+
+             <!--4.11) Children section-->
+            <a href="childMenu.html" class="menu-link" >
+                <div class="menu-item" id="menuChild">Children Menu<br>
+                    <span id="menuChildDesc">Kid-friendly portions with all the goodness.</span>
+                </div>
+            </a>
+
+             <!--4.12) Desserts section-->
+            <a href="Dessert.html" class="menu-link" >
+                <div class="menu-item" id="menuDessert">Desserts<br>
+                    <span id="menuDessertDesc">Sweet endings to complete your meal.</span>
+                </div>
+            </a>
+
+            <!--4.13) Pakistani Drinks section-->
+            <a href="pakistaniDrink.html" class="menu-link" >
+                <div class="menu-item" id="menuPakistaniDrink">Pakistani Drinks<br>
+                    <span id="menuPakistaniDrinkDesc">Refreshing, with natural yoghurt.</span>
+                </div>
+            </a>
+
+             <!--4.14) Soft Drinks section-->
+             <a href="coldDrinks.html" class="menu-link" >
+                <div class="menu-item" id="menuSoftDrink">Soft Drinks<br>
+                    <span id="menuSoftDrinkDesc">Chilled, fizzy, and full of flavour  perfect for any meal.</span>
+                </div>
+            </a>
+
+             <!--4.15) Warm Drinks section-->
+             <a href="warmDrink.html" class="menu-link" >
+                <div class="menu-item" id="menuWarmDrink">Warm Drinks<br>
+                    <span id="menuWarmDrinkDesc">Comforting and aromatic, ideal for a relaxing break.</span>
+                </div>
+            </a>
+
+             <!--4.16) Cocktails section-->
+            <a href="cocktails.html" class="menu-link" >
+                <div class="menu-item" id="menuCocktails">Cocktails<br>
+                    <span id="menuCocktailsDesc"> Fruity, fresh, and full of flavor – perfect for any moment.</span>
+                </div>
+            </a>
+    
+        </div>
+
+
+    <!--5) Footer Section-->
+    <footer>
+        <!--5.1) Footer info Section-->
+        <div class="footer-section">
+            <!--5.1.1) Contact Information -->
+            <div class="footerBox">Contact Information
+                <i class="fa-solid fa-circle-info"></i>
+                <span id="ContactInfoDesc">
+                   <pre><i class="fa-solid fa-phone"></i>   03081494279 (Zam Zam-Schöneberg)</pre> 
+                   <br>
+                   <pre><i class="fa-solid fa-phone"></i>   03064310551 (Zam Zam-Moabit)</pre> 
+                </span>
+            </div>
+            <!--5.1.2) Contact Information -->
+            <div class="footerBox">Our Opening Time
+                <i class="fa-solid fa-clock"></i>
+                <span id="openingTimesDesc">Monday - Sunday : 12:00-23:00</span>
+            </div>
+
+            <!-- <div class="footerBox">Email Us
+                <i class="fa-solid fa-envelope"></i>
+                <span id="mailAdressDesc">bistasantosh009@gmail.com</span>
+            </div> -->
+            
+            <!--5.1.3) Impressum -->
+            <a href="Impressum.html" class="footerBox">
+                <div class="legal"> Impressum
+                    <i class="fa-solid fa-section"></i>
+                </div> 
+            </a>
+               
+        </div>
+
+        <!--5.2) Social- logos --> 
+        <div class="social-media">
+            <a href="https://www.instagram.com/zamzamberlin/" class="instagram-link" >
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>    
+            </a>
+
+            <a href="https://www.facebook.com/zamzamberlin" class="facebook-link" >
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>    
+            </a>
+
+            <a href="https://www.tiktok.com/@zamzam_berlin" class="tik-tok-link">
+                <div class="tik-tok"><i class="fa-brands fa-tiktok"></i></div>
+            </a>
+            
+        </div>
+
+        <hr></hr>
+
+        <!--right-policy-->
+        <div class="right"  >
+            © 2025 Zam Zam Restaurant, Berlin. All rights reserved.
+        </div>
+
+
+        <!--5.3) Message-->
+        <div class="powerdby">
+            <pre>Made with <i class="fa-solid fa-heart"></i> by Santosh</pre>     
+        </div>
+  
+        
+    </footer>
+
+
+
+</body>
+
+</html>

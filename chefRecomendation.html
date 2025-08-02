@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Recommendations</title>
+    <link rel ="stylesheet" href="style.css"> <!-- linking with css file !-->
+    <script src="lang.js" defer></script> <!-- for langauge translation-->
+    <!--linking to fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+
+
+
+
+
+
+<body>
+    <!--header-->
+    <header>
+        <div class="chef-header-wrapper">
+                <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+            <span class="chef-section" id="chefHeader">Chef's Recommendations</span>
+        </div>
+    </header>
+
+
+    <!-- Chef's Recommendations Dishes -->
+    <div class="meal-note" id="meal-noteDesc">
+        🍛 All our meals are served with rice and salad 🥗
+    </div>
+
+    <!--chef recommendation menu section-->
+    <div class="chef-container">
+        <div class="chef-item" id="chef200">200. Scampi Shorba - 6.90€<br>
+            <span id="chef200Desc">King prawns in coconut curry.</span>
+            <div class="img img200"></div>
+        </div>
+
+        <div class="chef-item" id="chef201">201. Scampi Pakora - 8.90€<br>
+            <span id="chef201Desc">4 king prawns fried in chickpea batter with Pakistani spices.</span>
+            <div class="img img201"></div>
+        </div>
+
+        <div class="chef-item" id="chef202">202. Paneer Korma - 12.90€<br>
+            <span id="chef202Desc">Homemade cream cheese with almonds and cashews in a mild creamy sauce.</span>
+            <div class="img img202"></div>
+        </div>
+
+        <div class="chef-item" id="chef203">203. Paneer Chilli - 12.90€<br>
+            <span id="chef203Desc">Homemade cream cheese with paprika, tomatoes, onions and sweet chili in a special sauce (medium).</span>
+            <div class="img img203"></div>
+        </div>
+
+        <div class="chef-item" id="chef204">204. Butter Paneer - 12.90€<br>
+            <span id="chef204Desc">Homemade cream cheese with light spices and nuts in creamy tomato-butter sauce (mild).</span>
+            <div class="img img204"></div>
+        </div>
+
+        <div class="chef-item" id="chef205">205. Chicken Karahi - 13.90€<br>
+            <span id="chef205Desc">Chicken breast fillet with onions, tomatoes, coriander and fresh ginger in a medium-spicy sauce with special spice mix.</span>
+            <div class="img img205"></div>
+        </div>
+
+        <div class="chef-item" id="chef206">206. Chicken Kofta - 12.90€<br>
+            <span id="chef206Desc">Chicken breast minced balls in a medium-spicy curry cream sauce with green pepper.</span>
+            <div class="img img206"></div>
+        </div>
+
+        <div class="chef-item" id="chef207">207. Paneer Curry - 12.90€<br>
+            <span id="chef207Desc">Homemade cream cheese in mild curry cream sauce.</span>
+            <div class="img img207"></div>
+        </div>
+
+        <div class="chef-item" id="chef208">208. Paneer Biryani - 11.90€<br>
+            <span id="chef208Desc">Fried basmati rice with homemade cream cheese, paprika, onions, green peas and curry.</span>
+            <div class="img img208"></div>
+        </div>
+
+        <div class="chef-item" id="chef209">209. Mix Biryani - 13.90€<br>
+            <span id="chef209Desc">Fried basmati rice with cream cheese, lamb, chicken breast fillet, paprika, onions, green peas and curry.</span>
+            <div class="img img209"></div>
+        </div>
+
+        <div class="chef-item" id="chef210">210. Scampi Karahi - 15.90€<br>
+            <span id="chef210Desc">6 king prawns with onions, tomatoes, coriander and ginger in a medium-spicy sauce with special spice mix.</span>
+            <div class="img img210"></div>
+        </div>
+
+        <div class="chef-item" id="chef211">211. Scampi Korma - 14.90€<br>
+            <span id="chef211Desc">6 king prawns with almonds, cashews and grated cream cheese in cream sauce.</span>
+            <div class="img img211"></div>
+        </div>
+
+        <div class="chef-item" id="chef212">212. Mutton Mango - 14.90€<br>
+            <span id="chef212Desc">Lamb in a fruity mango cream sauce with fine spices and almonds.</span>
+            <div class="img img212"></div>
+        </div>
+
+        <div class="chef-item" id="chef213">213. Mutton Karahi - 15.90€<br>
+            <span id="chef213Desc">Tender stewed lamb with onions, tomatoes, coriander and ginger in a medium-spicy sauce with special spice mix.</span>
+            <div class="img img213"></div>
+        </div>
+
+        <div class="chef-item" id="chef214">214. Chicken Nuggets with Fries - 6.90€<br>
+            <span id="chef214Desc">6 chicken nuggets with French fries.</span>
+            <div class="img img214"></div>
+        </div>
+    </div>
+
+<!--script For going back to homepage-->
+<script>
+    document.getElementById("backArrow").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+
+<!-- Modal Structure for Image View -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span id="closeModal" style="cursor:pointer; font-size:20px;">&times;</span><br><br>
+    <img id="modalImage" src="" alt="Food image" style="max-width:90vw; max-height:80vh; border-radius: 12px;">
+  </div>
+</div>
+
+<!-- Link to modal JS file -->
+<script src="modal.js"></script>
+
+
+    
+</body>
+</html>

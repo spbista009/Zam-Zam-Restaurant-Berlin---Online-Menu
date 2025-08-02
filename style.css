@@ -1,0 +1,721 @@
+
+/*styling for all using universal selector*/
+*{
+  padding: 0;
+  margin: 0;  
+  font-family: Arial ;
+  border:border-box;
+   
+  /*  when you set width/height on an element, padding and border are included inside the width/height 
+  you set — they don't add extra size. */
+}
+
+/*language option*/
+.modal {
+  position:fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+
+
+/* 1) Restaurant logo */
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* 2) navbar */
+.navbar{
+    height: 50px;
+    background-color: #2F4F4F;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box2{
+    height: 30;
+    width: 30;
+    color: white;
+    font-weight:600;
+    text-decoration:none;
+    
+}
+
+.box2 i{
+  padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+.border{
+    border:3px solid transparent;
+}
+
+.border:hover{
+    border:1.5px solid white
+
+}
+
+/* 2.1) About us */
+.aboutUs-header-wrapper {
+  background-color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.aboutUs-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zamZamdesc-container,
+.zamZamImg-container{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  color: black;
+  gap:10px;
+  padding: 20px;
+}
+
+
+.zamZamImg1{
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    background-image: url(images/zamzamhauptstr.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.zamZamImg2{
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    background-image: url();
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.IntroDescription p,
+.zamZam1Desc p,
+.zamZam2Desc p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+
+
+/* media-queries for aboutUs section */
+@media(max-width:768px){
+  .aboutUs-header-wrapper {
+      height: 50px;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .IntroDescription {
+      height: auto;
+      margin: 10px;
+      font-size: 14px;
+    }
+
+    .zamZamdesc-container,
+    .zamZamImg-container {
+      flex-direction: column;
+      padding: 10px;
+      gap: 15px;
+    }
+
+    .zamZam1Desc,
+    .zamZam2Desc {
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .zamZamImg1 {
+      height: 250px;
+      width: 100%;
+    }
+
+}
+
+
+/* 2.2 AdressLocation :styling  direct in html */
+
+
+
+/* 3) hero-section */
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url(images/hero.jpg) center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+.welcome-message h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.welcome-message p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 350px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .welcome-message {
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: x-large;
+    }
+}
+/* Business Lunch Menu */
+.note-BL{
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;  
+  height: 50px;
+  font-weight:550;
+  background-color: #2F4F4F;
+}
+
+.noteBL, .open-time, .takeaway{
+  color: #D3D3D3;
+}
+
+.selectDay{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.selectDay select{
+  border: 2px solid black;
+  margin-left: 10px;
+}
+
+.divInfo{
+  display: flex;
+  gap:4px
+}
+
+
+@media (max-width: 480px) {
+  .note-BL{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    height: auto;
+  }
+  .note-BL div{
+    margin-top: 10px;
+  }
+
+  .selectDay {
+    flex-direction: column;
+    row-gap: 5px;
+    margin-left: 10px;
+  }
+
+  .divInfo{
+  flex-direction: column;
+}
+
+   
+}
+
+
+
+
+
+
+
+/*  4) Menu section */
+
+
+.menu-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.meal-note ,.soup-note{
+    background-color: #e6f0fa;  /* soft blue background */
+    color: #1a3c5d;             /* elegant deep blue text */
+    padding: 12px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+    border: 2px solid #b3d1ea;
+    border-radius: 10px;
+    max-width: 600px;
+    font-size: 1.05rem;
+    animation: fadeHighlight 3s ease-in-out infinite;
+   
+    
+}
+
+.soup-note{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+
+@keyframes fadeHighlight {
+    0%, 100% { background-color: #e6f0fa; }
+    50% { background-color: #d0e4f5; }
+}
+
+.drink-note{
+   background: #ffffff;
+    color: #2c3e50;
+    border-left: 5px solid #27ae60;
+    padding: 20px 24px;
+    margin: 40px auto;
+    max-width: 720px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 550;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  
+ 
+}
+
+
+
+.menu-link {
+  text-decoration: none; /* removes underline */
+  color: inherit;        /* makes text keep its original color */
+  display: inline-block; /* ensures it wraps around the block */
+}
+
+.menu-item {
+  width: 200px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+  border-color: #999;
+}
+
+.menu-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+/* -------------- Generalized Menu Styles------------------*/
+
+/* Header for all menu sections */
+[class$="-header-wrapper"] {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+/* Section for all menu wrappers */
+[class$="-section"] {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for all menu items */
+[class$="-container"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual menu item styling */
+[class$="-item"] {
+  width: 200px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* Hover effect for items */
+[class$="-item"]:hover {
+  background-color: #eee;
+  border-color: #999;
+}
+
+/* Span inside items */
+[class$="-item"] span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Styling for all images with class starting img */
+[class^="img"] {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+
+/* Common styles for all images */
+.img {
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 4px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+/*chef recommendation*/
+.img200 { background-image: url(images/soups/ZamZam\ 12\ mulligatawny.jpg); }
+.img201 { background-image: url(images/chefsRecommendation/201_ScampiPakora.png); }
+.img202 { background-image: url(images/chefsRecommendation/202_PaneerKorma.png); }
+.img203 { background-image: url(images/chicken/ZamZam\ 53\ chili\ chicken\ 57\ chicken\ masala\ und\ 89\ fisch\ masala.jpg); }
+.img204 { background-image: url(images/chicken/ZamZam\ 46\ butter\ chicken.jpg); }
+.img205 { background-image: url(images/chefsRecommendation/zamZam_205_ChickenKarahi.png); }
+.img206 { background-image: url(images/chefsRecommendation/206_ChickenKoft.png); }
+.img207 { background-image: url(images/chefsRecommendation/207_paneerCurry.png); }
+.img208 { background-image: url(); }
+.img209 { background-image: url(images/chefsRecommendation/209_MixBiryani.jpg); }
+.img210 { background-image: url(); }
+.img211 { background-image: url(images/chefsRecommendation/211_scampiKorma.png); }
+.img212 { background-image: url(images/chicken/ZamZam\ 51\ mango\ chicken.jpg); }
+.img213 { background-image: url(images/chefsRecommendation/zamZam_213_MuttonKarahi.png); }
+.img214 { background-image: url(images/chefsRecommendation/214_ChickenNugget.png); }
+
+/*1. soup images */
+.img9 { background-image: url(images/soups/ZamZam\ 9\ shabzi\ shorba.jpg); }
+.img10 { background-image: url(images/soups/ZamZam\ 10\ dhal\ shorba.jpg); }
+.img11 { background-image: url(images/soups/ZamZam\ 11\ tomato\ shorba.jpg); }
+.img12 { background-image: url(images/soups/ZamZam\ 12\ mulligatawny.jpg); }
+.img13 { background-image: url(images/soups/ZamZam\ 13\ zam\ zam\ garam\ shorba.jpg); }
+
+/*2. salad images */
+.img15 { background-image: url(); }
+.img16 { background-image: url(images/salat/ZamZam\ 16\ chicken\ salat.jpg); }
+.img17 { background-image: url(images/salat/ZamZam\ 17\ paneer\ salat.jpg); }
+.img18 { background-image: url(images/salat/18_ZamzamSalad\ .png); }
+
+/*3. Appetizer images */
+.img19 { background-image: url(images/appetizer/ZamZam\ 19\ gobi\ pakora.jpg); }
+.img20 { background-image: url(images/appetizer/20_Samosa.png); }
+.img21 { background-image: url(images/appetizer/ZamZam\ 21\ onion\ bhaji.jpg); }
+.img22 { background-image: url(images/appetizer/ZamZam\ 22\ fisch\ pakora.jpg); }
+.img23 { background-image: url(images/appetizer/ZamZam\ 23\ khumbi\ pakora.jpg); }
+.img24 { background-image: url(images/appetizer/ZamZam\ 24\ paneer\ pakora.jpg); }
+.img25 { background-image: url(images/appetizer/ZamZam\ 25\ murgh\ pakora.jpg); }
+.img26 { background-image: url(images/appetizer/26_MixPakora.png); }
+
+
+/*4. Vegetarian images */
+.img30 { background-image: url(images/vegetarian/ZamZam\ 30\ sabzi\ curry\ und\ 140\ shabzi\ curry.jpg) }
+.img31 { background-image: url(images/vegetarian/ZamZam\ 31\ dal\ makhani.jpg); }
+.img32 { background-image: url(images/vegetarian/ZamZam\ 32\ palak\ paneer\ ok.jpg); }
+.img33 { background-image: url(images/vegetarian/ZamZam\ 33\ matar\ paneer.jpg); }
+.img34 { background-image: url(images/vegetarian/ZamZam\ 34\ shahi\ paneer.jpg); }
+.img35 { background-image: url(images/vegetarian/ZamZam\ 35\ aloo\ gobi.jpg); }
+.img36 { background-image: url(images/vegetarian/ZamZam\ 36\ malai\ kofta.jpg); }
+.img37 { background-image: url(images/vegetarian/ZamZam\ 37\ chole\ bathura.jpg); }
+.img38 { background-image: url(images/vegetarian/ZamZam\ 38\ kokos\ gemüse.jpg); }
+.img39 { background-image: url(images/vegetarian/ZamZam\ 39\ khumbi\ masalah.jpg); }
+.img40 { background-image: url(images/vegetarian/ZamZam\ 40\ sabzi\ korma.jpg); }
+.img41 { background-image: url(images/vegetarian/ZamZam\ 41\ paneer\ jalfrezi.jpg); }
+
+
+/*5. Chicken images */
+.img42 { background-image: url(images/chicken/ZamZam\ 42\ chicken\ curry\ und\ 141\ chicken\ curry.jpg); }
+.img43 { background-image: url(images/chicken/ZamZam\ 43\ chicken\ sabzi\ und\ 63\ mutton\ sabzi.jpg); }
+.img44 { background-image: url(images/chicken/ZamZam\ 44\ chicken\ sagwala\ und\ 64\ mutton\ saagwala.jpg); }
+.img45 { background-image: url(images/chicken/ZamZam\ 45\ chicken\ vindaloo\ und\ 69\ mutton\ vindaloo\ und\ 49\ chicken\ madras\ und\ 62\ mutton\ madras.jpg); }
+.img46 { background-image: url(images/chicken/ZamZam\ 46\ butter\ chicken.jpg); }
+.img47 { background-image: url(images/chicken/ZamZam\ 47\ chicken\ korma\ und\ 66\ mutton\ korma\ und\ 142\ chicken\ korma.jpg); }
+.img48 { background-image: url(images/chicken/ZamZam\ 48\ chicken\ jalfreezi\ und\ 90\ fisch\ jalfrezi.jpg); }
+.img49 { background-image: url(images/chicken/ZamZam\ 49\ chicken\ Madaras.jpg); }
+.img50 { background-image: url(images/chicken/ZamZam\ 50\ chicken\ kokos.jpg); }
+.img51 { background-image: url(images/chicken/ZamZam\ 51\ mango\ chicken.jpg); }
+.img52 { background-image: url(images/chicken/ZamZam\ 52\ chicken\ shabnam\ chicken\ und\ 67\ mutton\ kumbiwhala\ und.jpg); }
+.img53 { background-image: url(images/chicken/ZamZam\ 53\ chili\ chicken\ 57\ chicken\ masala\ und\ 89\ fisch\ masala.jpg); }
+.img54 { background-image: url(images/chicken/ZamZam\ 54\ paneer\ chicken\ und\ 143\ paneer\ chicken.jpg); }
+.img55 { background-image: url(images/chicken/ZamZam\ 55\ chicken\ dal\ und\ 70\ mutton\ dal.jpg); }
+.img56 { background-image: url(images/chicken/ZamZam\ 56\ brocoli\ chicken.jpg); }
+.img57 { background-image: url(images/chicken/57_chickenMasala.png); }
+
+
+/*6. Lamb images */
+.img60 { background-image: url(images/lamb/ZamZam\ 60\ mutton\ paneer.jpg); }
+.img61 { background-image: url(images/lamb/ZamZam\ 61\ mutton\ curry.jpg); }
+.img62 { background-image: url(images/lamb/69_62_\ Lamm\ Vindallo_Madras.png); }
+.img63 { background-image: url(images/lamb/ZamZam_63_MuttonSabzi.png); }
+.img64 { background-image: url(images/lamb/64_LambSagwalla.png); }
+.img65 { background-image: url(images/lamb/ZamZam\ 65\ mutton\ bhuna.jpg); }
+.img66 { background-image: url(images/lamb/66_MuttonKorma.png); }
+.img67 { background-image: url(images/chicken/ZamZam\ 52\ chicken\ shabnam\ chicken\ und\ 67\ mutton\ kumbiwhala\ und.jpg); }
+.img68 { background-image: url(images/lamb/ZamZam\ 68\ mutton\ lahori.jpg); }
+.img69 { background-image: url(images/lamb/69_62_\ Lamm\ Vindallo_Madras.png); }
+.img70 { background-image: url(images/lamb/zamzam_70_MuttonDaal\ .png); }
+
+/*7. Rice Menu images */
+.img107 { background-image: url(images/Rice/ZamZam\ 107\ sabzi\ biryani.jpg) }
+.img108 { background-image: url(images/Rice/ZamZam\ 108\ chicken\ biryani.jpg); }
+.img109 { background-image: url(images/Rice/ZamZam\ 109\ mutton\ biryani.jpg); }
+.img110 { background-image: url(images/Rice/ZamZam\ 110\ scampi\ biryani.jpg); }
+
+
+/*8. Fish images */
+.img83 { background-image: url(images/Fish/ZamZam\ 83\ fisch\ curry.jpg); }
+.img84 { background-image: url(images/Fish/ZamZam\ 84\ fisch\ vindaloo.jpg); }
+.img85 { background-image: url(images/Fish/ZamZam\ 85\ scampi\ vindaloo.jpg); }
+.img86 { background-image: url(images/Fish/ZamZam\ 86\ scampi\ masala\ und\ 87\ scampi\ jalfrezi.jpg); }
+.img87 { background-image: url(images/Fish/ZamZam\ 86\ scampi\ masala\ und\ 87\ scampi\ jalfrezi.jpg); }
+.img88 { background-image: url(images/Fish/ZamZam\ 88\ fisch\ korma.jpg); }
+.img89 { background-image: url(images/chicken/ZamZam\ 48\ chicken\ jalfreezi\ und\ 90\ fisch\ jalfrezi.jpg); }
+.img90 { background-image: url(images/chicken/ZamZam\ 48\ chicken\ jalfreezi\ und\ 90\ fisch\ jalfrezi.jpg); }
+.img91 { background-image: url(images/Fish/ZamZam\ 91\ scampi\ curry.jpg); }
+
+/*9.  Grill images */
+.img97  { background-image: url(images/grill/97_paneerTikka.jpg); }
+.img98  { background-image: url(images/grill/98_chickenTandoori.jpg); }
+.img99  { background-image: url(images/grill/99.jpg); }
+.img100 { background-image: url(images/grill/100.jpg); }
+.img101 { background-image: url(images/grill/101_FishTikka.png); }
+.img102 { background-image: url(images/grill/102_ZamZamGrill.jpg); }
+.img103 { background-image: url(images/grill/ZamZam\ 103\ scampi\ tikka.jpg); }
+.img104 { background-image: url(images/grill/97_paneerTikka.jpg); }
+
+
+/*10. Supplement images */
+.img125  { background-image: url(images/supplements/125_Bhatura\ .png); }
+.img126  { background-image: url(images/supplements/ZamZam\ _126_TandooriChapati.png); }
+.img127  { background-image: url(images/supplements/127\ NormalNaan.png); }
+.img128 { background-image: url(images/supplements/128\ GarlicNaan.png); }
+.img129 { background-image: url(); }
+.img131 { background-image: url(images/supplements/ZamZam\ 131\ raita.jpg); }
+.img132 { background-image: url(images/supplements/ZamZam_Reis.jpg); }
+
+/*11. Children images */
+.img140  { background-image: url(images/child/140_kinderSabziCurry.png); }
+.img141  { background-image: url(images/child/141_kinderChickenCurry.png); }
+.img142  { background-image: url(); }
+.img143 { background-image: url(images/child/143_KinderPaneerChicken.png); }
+
+/*12.  Desserts images */
+.img135  { background-image: url(); }
+.img136 { background-image: url(images/dessert/ZamZam_GulabJamun.png); }
+
+
+/*13.  Pakistani Drinks images */
+.imgpk1  { background-image: url(images/PakastaniDrinks/Zamzam_\ SweetLassi.jpg); }
+.imgpk2 { background-image: url(images/PakastaniDrinks/ZamZam\ _SaltLassi.jpg); }
+.imgpk3 { background-image: url(images/PakastaniDrinks/zamZam_MangoLassi.jpg); }
+
+
+
+/*14.  Soft Drinks images */
+
+
+/*15. Warm Drinks images */
+
+
+/*16. Cocktails images */
+.img1 { background-image: url(images/cocktails/mango\ kiss.jpg); }
+.img2 { background-image: url(images/cocktails/2_coconutKiss.jpg); }
+.img3 { background-image: url(images/cocktails/3_Mosquito.jpg); }
+.img4 { background-image: url(images/cocktails/4_SummerLove.jpg); }
+.img5 { background-image: url(images/cocktails/strawberryKiss.jpg); }
+.img6 { background-image: url(images/cocktails/6_Cinderella.jpg); }
+.img7 { background-image: url(images/cocktails/desiSoda.jpg); }
+
+
+
+
+/*5) Footer section*/
+.footer-section{
+  background-color: #2F4F4F;
+  color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+   flex-wrap:wrap;
+  /* align-items: center; */
+  padding-top: 20px;
+  font-weight:bolder;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.footerBox span{
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+.footerBox{
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* 5.1.3 Impressum  */
+.Impressum-header-wrapper{
+  background-color: #2F4F4F;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.Impressum-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 400px) {
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    
+  }
+
+
+  .Impressum-header-wrapper {
+    flex-direction: row;
+    height: auto;
+    padding: 10px 0;
+    
+  }
+}
+
+
+/*5.2) social medias */
+.social-media{
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px; 
+  
+  
+}
+
+.right {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/*5.3) messsage */
+.powerdby{
+  font-weight:600;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Drinks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="coldDrinks-header-wrapper">
+            <i class="fas fa-arrow-left" id="backArrow" style="cursor:pointer; margin-right: 10px; margin-left: 10px;"></i>
+            <span class="coldDrinks-section" id="coldDrinksHeader">Cold Drinks</span>
+        </div>
+    </header>
+
+    <!--note section-->
+    <div class="drink-note" id="drink-note">
+        🚫 <strong id="drink-noteTitle">Please note:</strong>
+            <span id="drink-noteText1">We are a Halal restaurant and do not serve alcoholic beverages.</span><br>
+        🥤 <span>
+            <span id="drink-noteText2a">Kindly</span>
+            <strong id="drink-noteText2b">avoid bringing outside drinks.</strong>
+            <span id="drink-noteText2c">Explore our refreshing drink selection instead!</span>
+        </span>
+    </div>
+
+    <!--drink notice-->
+    <div class="drink-note">
+        <span id="drink-notice1">We offer Fritz-Cola in three refreshing flavors: Honeydew Melon, Super Zero, and Classic.</span><br>
+        <span id="drink-notice2">Our iced tea is available in Peach and Lemon flavors.</span>
+    </div>
+
+    <div class="coldDrinks-container">
+
+        <div class="coldDrinks-item" id="coldDrink1">1. Table Water - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink1Desc">Still and refreshing, perfect for any meal.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink2">2. Still Water - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink2Desc">Pure and simple still mineral water.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink3">3. Coca-Cola - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink3Desc">Classic Coca-Cola taste.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink4">4. Coca-Cola Zero - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink4Desc">Sugar-free cola with great taste.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink5">5. Fanta - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink5Desc">Fruity orange soda, fun and fizzy.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink6">6. Sprite - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink6Desc">Crisp lemon-lime flavor.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink7">7. Spezi - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink7Desc">Cola and orange mix, a German favorite.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink8">8. Bitter Lemon - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink8Desc">Refreshing and slightly bitter citrus drink.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink9">9. Ginger Ale - 2.50€ (0.2l) / 3.50€ (0.4l)<br>
+            <span id="coldDrink9Desc">Classic ginger-flavored soft drink.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink10">10. Bionade (Elderberry) - 2.50€ (0.33l)<br>
+            <span id="coldDrink10Desc">Fermented natural soda with a fruity elderberry flavor.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink11">11. Club Mate - 2.50€ (0.5l)<br>
+            <span id="coldDrink11Desc">Refreshing mate tea soda with a natural kick.</span>
+            
+        </div>
+
+        <div class="coldDrinks-item" id="coldDrink12">12. Iced Tea (Various Flavors) - 3.00€ (0.33l)<br>
+            <span id="coldDrink12Desc">Chilled and flavorful iced tea selection.</span>
+            
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("backArrow").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
