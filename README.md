@@ -62,7 +62,7 @@ Project_zamZam_Menu/
 
 This project is deployed and publicly accessible via **Netlify**:
 
-👉 [https://zamzam-menu.netlify.app](https://zamzam-menu.netlify.app)
+👉 [https://zamzammenu.netlify.app](https://zamzammenu.netlify.app)
 
 ---
 
